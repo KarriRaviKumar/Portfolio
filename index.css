@@ -1,0 +1,268 @@
+html {
+    scroll-behavior: smooth;
+}
+/* body{
+    background-color: #333333;
+    margin-bottom: 2000px; 
+} */
+p{
+    margin: 0;
+}
+.image{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.header{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #EAECC6;
+    height: 81.6px;
+    color: #38000A;
+}
+.left-section,
+.right-section{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.right-ele{
+    font-family: roboto;
+    padding: 30px;
+    font-size: 18px;
+    font-weight: 550;
+    color: #38000A;
+}
+.image{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.name{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 4px;
+}
+.overall{
+    margin-top: 81.6px;
+}
+.home{
+    height: calc(100vh - 81.6px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.welcome{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 65px;
+    padding-bottom: 20px;
+    color: #38000A;
+}
+.objective{
+    line-height: 1.6;
+    font-size: 30px;
+    width: 1000px;
+    font-style: italic;
+    text-align: center;
+}
+.cv{
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(81, 81, 235);
+}
+.cv:hover {
+    opacity: 0.7;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    align-items: center;
+}
+.about-me{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 550;
+    text-decoration: underline;
+    color: #38000A;
+    font-family: "Josefin Sans", sans-serif;
+}
+.about-me-con{
+    text-align: center;
+    font-size: 25px;
+    width: 1000px;
+    font-family: roboto;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+.grad,
+.projectsheading,
+.contactheading
+{
+    font-size: 40px;
+    font-weight: 550;
+    text-decoration: underline;
+    margin: 0;
+    margin-bottom: 20px;
+    color: #38000A;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+}
+.logo{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+.graduation {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    width: 100%;
+}
+.edu {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    width: 60%; 
+    padding: 15px;
+    border-radius: 10px; 
+    border: solid;
+}
+.logodiv {
+    margin-bottom: 10px;
+}
+.edu-details, .graddiv {
+    text-align: center;
+}
+.sch-name{
+    font-weight: 550;
+    font-size: 25px;
+}
+.course,
+.grad-year{
+    font-size: 20px;
+}
+.score{
+    font-weight: 550;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+}
+.projectsheading{
+    padding-top: 100px;
+}
+.projects{
+    display: grid;
+    row-gap: 15px;
+}
+.project{
+    display: flex;
+    flex-direction: row;
+    border: solid;
+}
+.proname{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 40%; 
+    align-items: center;
+    justify-content: center;
+    border-right: solid;
+    margin-right: 10px; 
+    text-align: center;
+}
+.gitlink{
+    font-size: 15px;
+}
+.promatter{
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+    font-family: roboto;
+    width: 100%;
+}
+
+.contactheading {
+    padding-top: 100px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    font-family: roboto;
+}
+
+.contact-info p {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+    font-family: roboto;
+    font-size: 18px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.subbtn {
+    padding: 10px 20px;
+    background-color: #0f1010;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.cenbtn {
+    text-align: center;
+}
+
+.contact-form button:hover {
+    background-color: rgb(231, 223, 223);
+    color: black;
+}

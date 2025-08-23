@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravi Kumar</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="left-section">
+                <img class="image" src="pics/raviphoto.jpeg">
+                <p class="name">RAVI KUMAR KARRI</p>
+            </div>
+            <div class="right-section">
+                <a href="#home"><div class="right-ele">HOME</div></a>
+                <a href="#about"><div class="right-ele">ABOUT</div></a>
+                <a href="#projects"><div class="right-ele">PROJECTS</div></a>
+                <a href="#contact"><div class="right-ele">CONTACT</div></a>
+                <!-- <div class="right-ele">HOME</div>
+                <div class="right-ele">ABOUT</div>
+                <div class="right-ele">PROJECTS</div>
+                <div class="right-ele">CONTACT</div> -->
+            </div>
+        </div>
+    </header>
+    <div class="overall">
+        <div id="home" class="home">
+            <div class="welcome">HELLO, I'M RAVI KUMAR</div>
+            <div class="objective">A passionate and results-driven Artificial Intelligence Engineering graduate with a solid foundation in machine learning and Front-End technologies.</div>
+            <div class="download_cv">
+                <button class="cv" onclick="window.open('Files/resumeraviii.pdf', '_blank');">View Resume</button>
+            </div>
+        </div>
+        <div id="about" class="about">
+            <div class="about-me">ABOUT ME</div>
+            <p class="about-me-con">Hy, Ravi here .! I have completed my Graduation in Artificial Intelligence and machine learning with having experience on Machine learning and Front-End development !</p>
+        </div>
+        <p class="grad">GRADUATION</p>
+        <div class="graduation">
+            <div class="edu">
+                <div class="logodiv">
+                    <img class="logo" src="pics/sietlogo.jpg">
+                </div>
+                <div class="edu-details">
+                    <p class="sch-name">Swarnandhra institute of Engineering and Technology</p>
+                    <p class="course">Bachelor's degree in Artificial Intelligence and Machine learning</p>
+                    <p class="score">7 CGPA</p>
+                </div>
+                <div class="graddiv">
+                    <p class="grad-year">2022-2025</p>
+                </div>  
+            </div>
+            <div class="edu">
+                <div class="logodiv">
+                    <img class="logo" src="pics/diplogo.png">
+                </div>
+                <div class="edu-details">
+                    <p class="sch-name">D.A government polytechnic</p>
+                    <p class="course">Mechanical Engineering</p>
+                    <p class="score">63.14 %</p>
+                </div>
+                <div class="graddiv">
+                    <p class="grad-year">2018-2021</p>
+                </div>
+            </div>
+            <div class="edu">
+                <div class="logodiv">
+                    <img class="logo" src="pics/schlogo.jpg">
+                </div>
+                <div class="edu-details">
+                    <p class="sch-name">Sri Sampath Vidya Nikethan</p>
+                    <p class="course">Board of Secondary Education - AP</p>
+                    <p class="score">9.3 CGPA</p>
+                </div>
+                <div class="gradlogo">
+                    <p class="grad-year">2017-2018</p>
+                </div>
+            </div>
+        </div>
+        <p id="projects" class="projectsheading">PROJECTS</p>
+        <div class="projects">
+            <div class="project">
+                <div class="proname">
+                    <p>Youtube clown</p>
+                    <p class="gitlink">
+                        <a href="https://github.com/RaviNani024/YouTube-Clown" target="_blank">[Github Link]</a>
+                    </p>
+                </div>
+                <div class="promatter">Created YouTube Clown using HTML and CSS, a fun and creative web project that replicates the YouTube homepage with a humorous, clown-themed twist. This project focuses on front-end design, showcasing layout structuring, responsive elements, and custom styling. It highlights my skills in HTML and CSS while adding a playful and unique spin to a familiar platform.</div>
+            </div>
+            <div class="project">
+                <div class="proname">
+                    <p>Number guessing game</p>
+                    <p class="gitlink">
+                        <a href="https://github.com/RaviNani024/Number_guessing_game" target="_blank">[Github Link]</a>
+                    </p>
+                </div>
+                <div class="promatter">Created a Number Guessing Game in Python where the user sets a custom range (lower to upper limit), and the system randomly generates a secret number within that range. The player has 7 chances to guess the number correctly. After each guess, the game provides feedback — whether the guess is too high or too low, helping the user get closer to the correct answer. The game uses basic control structures, loops, and random number generation to offer an interactive command-line experience.</div>
+            </div>
+            <div class="project">
+                <div class="proname">
+                    <p>Deep learning based abnornmal event detection in padestrian pathways</p>
+                    <p class="gitlink">
+                        <a href="https://github.com/RaviNani024/Deep-learning-based-abnormal-event-detection-in-padestrian-pathways" target="_blank">[Github Link]</a>
+                    </p>
+                </div>
+                <div class="promatter">Developed a Deep Learning-based Abnormal Event Detection System for pedestrian pathways using the UCSD anomaly detection dataset. The system processes video frames through preprocessing steps like resizing, grayscale conversion, and background subtraction. A hybrid CNN-LSTM model was implemented to extract spatial and temporal features, enabling detection of unusual activities such as running, loitering, or sudden crowd movement. The model evaluates anomalies using reconstruction error, temporal coherence, and optical flow analysis. Performance was measured with metrics like AUC-ROC, Precision, Recall, and F1-Score. The project also includes a visualization dashboard to flag events with timestamps and anomaly scores, simulating real-world deployment for surveillance in public spaces.</div>
+            </div>
+        </div>
+        <p id="contact" class="contactheading">CONTACT ME</p>
+        <div class="contact">
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:ravi@example.com">ravikumar226654@gmail.com</a></p>
+                <p><strong>Phone:</strong> +91 6281603005</p>
+                <p> <a href="https://www.linkedin.com/in/ravi-karri-6a18b3247/" target="_blank">Linkedin</a></p>
+                <p> <a href="https://github.com/RaviNani024" target="_blank">Github Link</a></p>
+            </div>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/mkgzdeao" method="POST">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="_replyto" required><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                    <div class="cenbtn">
+                        <button id="subbtn" class="subbtn" type="submit">Send Message</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
