@@ -14,7 +14,14 @@ p{
     object-fit: cover;
     background-position: center;
     border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
+.mob-img{
+    display: none;
+}
+
 .header{
     margin: 0;
     display: flex;
@@ -27,28 +34,28 @@ p{
     height: 81.6px;
     color: #38000A;
 }
+
 .left-section,
 .right-section{
     display: flex;
-    justify-content: space-between;
-    justify-content: center;
     align-items: center;
-    justify-content: space-between;
 }
+
+.right-section{
+    width: 400px;
+    justify-content: space-around;
+}
+
 .right-ele{
     font-family: roboto;
-    padding: 30px;
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 550;
     color: #38000A;
 }
-.image{
-    margin-left: 20px;
-    margin-right: 20px;
-}
+
 .name{
     font-family: "Josefin Sans", sans-serif;
-    font-size: 25px;
+    font-size: 1.5625em;
     font-weight: 700;
     padding-top: 4px;
 }
@@ -65,20 +72,20 @@ p{
 }
 .welcome{
     font-family: "Josefin Sans", sans-serif;
-    font-size: 65px;
+    font-size: 4.0625em;
     padding-bottom: 20px;
     color: #38000A;
 }
 .objective{
     line-height: 1.6;
-    font-size: 30px;
-    width: 1000px;
+    font-size: 1.875em;
+    width: 80%;
     font-style: italic;
     text-align: center;
 }
 .cv{
     margin-top: 50px;
-    font-size: 20px;
+    font-size: 1.25em;
     padding: 10px;
     border-radius: 10px;
     border: none;
@@ -99,7 +106,7 @@ p{
 }
 .about-me{
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: 550;
     text-decoration: underline;
     color: #38000A;
@@ -107,8 +114,8 @@ p{
 }
 .about-me-con{
     text-align: center;
-    font-size: 25px;
-    width: 1000px;
+    font-size: 1.5625em;
+    width: 70%;
     font-family: roboto;
     line-height: 1.5;
     margin-bottom: 35px;
@@ -117,7 +124,7 @@ p{
 .projectsheading,
 .contactheading
 {
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: 550;
     text-decoration: underline;
     margin: 0;
@@ -157,15 +164,15 @@ p{
 }
 .sch-name{
     font-weight: 550;
-    font-size: 25px;
+    font-size: 1.5625em;
 }
 .course,
 .grad-year{
-    font-size: 20px;
+    font-size: 1.25em;
 }
 .score{
     font-weight: 550;
-    font-size: 20px;
+    font-size: 1.25em;
 }
 a {
     text-decoration: none;
@@ -184,7 +191,7 @@ a {
 }
 .proname{
     font-family: "Josefin Sans", sans-serif;
-    font-size: 20px;
+    font-size: 1.25em;
     display: flex;
     flex-direction: column;
     width: 40%; 
@@ -195,10 +202,10 @@ a {
     text-align: center;
 }
 .gitlink{
-    font-size: 15px;
+    font-size: 0.9375em;
 }
 .promatter{
-    font-size: 20px;
+    font-size: 1.25em;
     text-align: center;
     padding: 30px;
     font-family: roboto;
@@ -228,7 +235,7 @@ a {
 
 .contact-info p {
     margin: 8px 0;
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 .contact-form {
@@ -236,7 +243,7 @@ a {
     min-width: 300px;
     margin: 10px;
     font-family: roboto;
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 .contact-form input, 
@@ -265,4 +272,39 @@ a {
 .contact-form button:hover {
     background-color: rgb(231, 223, 223);
     color: black;
+}
+
+@media (max-width:768px){
+    .header{
+        display: none;
+    }
+    .mob-img{
+        display: block;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .welcome,
+    .about-me,
+    .grad,
+    .projectsheading{
+        font-size: 1.4375em;
+        text-align: center;
+    }
+    .objective,
+    .cv,
+    .about-me-con{
+        font-size: 1em;
+    }
+    .sch-name{
+        font-size: 1.25em;
+    }
+    .course,
+    .score,
+    .grad-year{
+        font-size: 1em;
+    }
 }
