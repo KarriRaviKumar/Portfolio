@@ -1,69 +1,21 @@
 html {
     scroll-behavior: smooth;
 }
-/* body{
-    background-color: #333333;
-    margin-bottom: 2000px; 
-} */
+
+body {
+    font-family: geist;
+}
+
 p{
     margin: 0;
 }
-.image{
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    background-position: center;
-    border-radius: 50%;
-    margin-left: 20px;
-    margin-right: 20px;
+
+a {
+    text-decoration: none;
 }
 
-.mob-img{
-    display: none;
-}
-
-.header{
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #EAECC6;
-    height: 81.6px;
-    color: #38000A;
-}
-
-.left-section,
-.right-section{
-    display: flex;
-    align-items: center;
-}
-
-.right-section{
-    width: 400px;
-    justify-content: space-around;
-}
-
-.right-ele{
-    font-family: roboto;
-    font-size: 1.125em;
-    font-weight: 550;
-    color: #38000A;
-}
-
-.name{
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1.5625em;
-    font-weight: 700;
-    padding-top: 4px;
-}
-.overall{
-    margin-top: 81.6px;
-}
 .home{
-    height: calc(100vh - 81.6px);
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -71,21 +23,19 @@ p{
     justify-content: center;
 }
 .welcome{
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 4.0625em;
+    font-weight: 900;
+    font-size: 4.0625rem;
     padding-bottom: 20px;
     color: #38000A;
 }
 .objective{
     line-height: 1.6;
-    font-size: 1.875em;
-    width: 80%;
-    font-style: italic;
-    text-align: center;
+    font-size: 1.05rem;
+    width: 40%;
 }
 .cv{
     margin-top: 50px;
-    font-size: 1.25em;
+    font-size: 1rem;
     padding: 10px;
     border-radius: 10px;
     border: none;
@@ -97,214 +47,274 @@ p{
 .cv:hover {
     opacity: 0.7;
 }
+
 .about{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-top: 100px;
     align-items: center;
 }
+
 .about-me{
-    text-align: center;
-    font-size: 2.5em;
-    font-weight: 550;
-    text-decoration: underline;
-    color: #38000A;
-    font-family: "Josefin Sans", sans-serif;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    margin-bottom: 0.8rem;
+    padding: 8px 12px;
+    border-radius: 10px;
 }
+
 .about-me-con{
-    text-align: center;
-    font-size: 1.5625em;
-    width: 70%;
-    font-family: roboto;
-    line-height: 1.5;
-    margin-bottom: 35px;
+    padding-left: 1.5rem;
+    font-size: 1.05rem;
+    width: 40%;
+    margin-bottom: 8px;
 }
-.grad,
-.projectsheading,
-.contactheading
-{
-    font-size: 2.5em;
-    font-weight: 550;
-    text-decoration: underline;
-    margin: 0;
-    margin-bottom: 20px;
-    color: #38000A;
-    font-family: "Josefin Sans", sans-serif;
-    text-align: center;
-}
-.logo{
-    height: 60px;
-    width: 60px;
-    border-radius: 30px;
-}
-.graduation {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 20px; 
-    width: 100%;
-}
-.edu {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    text-align: center; 
-    width: 60%; 
-    padding: 15px;
-    border-radius: 10px; 
-    border: solid;
-}
-.logodiv {
-    margin-bottom: 10px;
-}
-.edu-details, .graddiv {
-    text-align: center;
-}
-.sch-name{
-    font-weight: 550;
-    font-size: 1.5625em;
-}
-.course,
-.grad-year{
-    font-size: 1.25em;
-}
-.score{
-    font-weight: 550;
-    font-size: 1.25em;
-}
-a {
-    text-decoration: none;
-}
-.projectsheading{
-    padding-top: 100px;
-}
-.projects{
-    display: grid;
-    row-gap: 15px;
-}
-.project{
-    display: flex;
-    flex-direction: row;
-    border: solid;
-}
-.proname{
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1.25em;
+
+.graduation{
     display: flex;
     flex-direction: column;
-    width: 40%; 
     align-items: center;
-    justify-content: center;
-    border-right: solid;
-    margin-right: 10px; 
-    text-align: center;
-}
-.gitlink{
-    font-size: 0.9375em;
-}
-.promatter{
-    font-size: 1.25em;
-    text-align: center;
-    padding: 30px;
-    font-family: roboto;
-    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 100px;
 }
 
-.contactheading {
-    padding-top: 100px;
-}
-
-.contact {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 12px;
-    margin: 20px;
-}
-
-.contact-info {
-    flex: 1;
-    min-width: 250px;
-    margin: 10px;
-    font-family: roboto;
-}
-
-.contact-info p {
-    margin: 8px 0;
-    font-size: 1.125em;
-}
-
-.contact-form {
-    flex: 1;
-    min-width: 300px;
-    margin: 10px;
-    font-family: roboto;
-    font-size: 1.125em;
-}
-
-.contact-form input, 
-.contact-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 6px 0;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-}
-
-.subbtn {
-    padding: 10px 20px;
-    background-color: #0f1010;
-    font-weight: bold;
+.grad{
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: black;
     color: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
+    margin-bottom: 0.8rem;
+    padding: 8px 12px;
+    border-radius: 10px;
 }
 
-.cenbtn {
+.edu{
+    display: grid;
+    grid-template-columns: 0.5fr 4.5fr 1.5fr;
+    width: 40%;
+    padding-left: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.logo{
+    width: 100%;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.edu-details{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sch-name{
+    font-size: 1.05rem;
+}
+
+.course{
+    font-size: 0.8rem;
+}
+
+.grad-year{
+    font-size: 0.9rem;
     text-align: center;
 }
 
-.contact-form button:hover {
-    background-color: rgb(231, 223, 223);
-    color: black;
+.projects{
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: center;
 }
 
-@media (max-width:768px){
-    .header{
-        display: none;
-    }
-    .mob-img{
-        display: block;
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 50%;
-        margin-bottom: 20px;
-    }
+.projectsheading{
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
 
-    .welcome,
-    .about-me,
-    .grad,
-    .projectsheading{
-        font-size: 1.4375em;
+.project_con {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.project{
+    width: 370px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.pro_pics {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    z-index: 0;
+}
+
+.pics {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%; 
+    max-height: 90%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.pro_pics img.active {
+    opacity: 1 !important;
+    z-index: 1;
+}
+
+.left-pro{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.proname{
+    font-weight: 600;
+}
+
+.promatter{
+    padding-top: 5px;
+    font-size: 0.8rem;
+}
+
+.gitlink{
+    background-color: black;
+    color: white;
+    padding: 0px 5px;
+    border-radius: 7px;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 6px;
+}
+
+.github-logo {
+    width: 10px;
+    height: 10px;
+    transition: transform 0.2s ease;
+}
+
+.source-text {
+    font-weight: 600;
+    font-size: 0.7rem;
+    text-transform: capitalize;
+    padding-bottom: 1px;
+    color: white;
+}
+
+.github-link:hover {
+    opacity: 0.9;
+}
+
+.contact_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact{
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px 10px;
+    margin-bottom: 15px;
+}
+
+.get_in_touch{
+    font-size: 2.5rem;
+}
+
+.msg-me{
+    font-size: 1rem;
+}
+
+.email{
+    font-size: 1.2rem;
+}
+
+.instalink{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.insta-logo{
+    width: 30px;
+    height: auto;
+    object-fit: fill;
+}
+
+.insta-text{
+    color: white;
+    align-items: center;
+}
+
+.insta-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 8px 3px 0px;
+}
+
+@media (max-width:480px){
+    .welcome{
+        font-weight: 700;
+        font-size: 2rem;
+        width: 100%;
         text-align: center;
     }
-    .objective,
-    .cv,
+    .objective{
+        line-height: 1.6;
+        font-size: 0.8em;
+        width: 80%;
+        text-align: center;
+    }
+    .about-me,
+    .projectsheading,
+    .grad,
+    .contact{
+        font-size: 1rem;
+    }
     .about-me-con{
-        font-size: 1em;
+        font-size: 0.8rem;
+        width: 80%;
+        text-align: center;
     }
-    .sch-name{
-        font-size: 1.25em;
+    .project_con{
+        grid-template-columns: 1fr;
     }
-    .course,
-    .score,
-    .grad-year{
-        font-size: 1em;
+    .project{
+        width: 320px;
+    }
+    .pro_pics{
+        height: 175px;
     }
 }

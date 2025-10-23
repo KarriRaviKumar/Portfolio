@@ -7,52 +7,37 @@
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header">
-            <div class="left-section">
-                <img class="image" src="pics/ravipic.jpeg">
-                <p class="name">RAVI KUMAR KARRI</p>
-            </div>
-            <div class="right-section">
-                <a href="#home"><div class="right-ele">HOME</div></a>
-                <a href="#about"><div class="right-ele">ABOUT</div></a>
-                <a href="#projects"><div class="right-ele">PROJECTS</div></a>
-                <a href="#contact"><div class="right-ele">CONTACT</div></a>
-                <!-- <div class="right-ele">HOME</div>
-                <div class="right-ele">ABOUT</div>
-                <div class="right-ele">PROJECTS</div>
-                <div class="right-ele">CONTACT</div> -->
-            </div>
-        </div>
-    </header>
     <div class="overall">
+        <!-- Home page -->
         <div id="home" class="home">
-            <div class="mob-image">
-                <img class="mob-img" src="pics/ravipic.jpeg" alt="Ravi kumar">
-            </div>
-            <div class="welcome">HELLO, I'M RAVI KUMAR</div>
-            <div class="objective">A passionate and results-driven Artificial Intelligence Engineering graduate with a solid foundation in machine learning and Front-End technologies.</div>
+            <div class="welcome">HYY, I'M RAVI KUMAR 👋</div>
+            <div class="objective">A Web Developer who loves building things and problem solving, with experience on <strong>React.js(Frontend)</strong> and <strong>Django / Python(Backend)</strong>.</div>
             <div class="download_cv">
-                <button class="cv" onclick="window.open('Files/resumeraviii.pdf', '_blank');">View Resume</button>
+                <button class="cv" onclick="window.open('Files/raviweb.pdf', '_blank');">View Resume</button>
             </div>
         </div>
+
+        <!-- about section -->
         <div id="about" class="about">
             <div class="about-me">ABOUT ME</div>
-            <p class="about-me-con">Hy, Ravi here .! I have completed my Graduation in Artificial Intelligence and machine learning with having experience on Machine learning and Front-End development !</p>
+            <p class="about-me-con">Hey! <strong>I'm Ravi Kumar</strong>, a <strong>computer science student</strong> who enjoys turning ideas into real, working web projects. I've built things like a <strong>weather app</strong> that changes with the forecast and a simple <strong>number guessing game</strong> — small projects that helped me learn and have fun with coding along the way.</p>
+            <p class="about-me-con">I really like working on <strong>clean</strong>, <strong>functional designs</strong> and finding better ways to make things work behind the scenes. Right now, I'm getting deeper into <strong>backend development</strong> and learning how to connect everything together into <strong>full-stack projects</strong>.</p>
+            <p class="about-me-con">When I'm not coding, you'll probably find me <strong>playing mobile games</strong>, <strong>watching movies</strong>, or <strong>catching up on anime</strong>. It's how I unwind and sometimes pick up new creative ideas for what to build next.</p>
         </div>
-        <p class="grad">GRADUATION</p>
+
+        <!-- Graduation details -->
         <div class="graduation">
+            <div class="grad">EDUCATION</div>
             <div class="edu">
                 <div class="logodiv">
-                    <img class="logo" src="pics/sietlogo.jpg">
+                    <img class="logo" src="pics/education-logo/sietlogo.jpg">
                 </div>
                 <div class="edu-details">
-                    <p class="sch-name">Swarnandhra institute of Engineering and Technology</p>
+                    <p class="sch-name"><strong>Swarnandhra institute of Engineering and Technology (B.Tech)</strong></p>
                     <p class="course">Bachelor's degree in Artificial Intelligence and Machine learning</p>
-                    <p class="score">7 CGPA</p>
                 </div>
                 <div class="graddiv">
                     <p class="grad-year">2022-2025</p>
@@ -60,12 +45,11 @@
             </div>
             <div class="edu">
                 <div class="logodiv">
-                    <img class="logo" src="pics/diplogo.png">
+                    <img class="logo" src="pics/education-logo/diplogo.png">
                 </div>
                 <div class="edu-details">
-                    <p class="sch-name">D.A government polytechnic</p>
+                    <p class="sch-name"><strong>D.A government polytechnic (12th/Diploma)</strong></p>
                     <p class="course">Mechanical Engineering</p>
-                    <p class="score">63.14 %</p>
                 </div>
                 <div class="graddiv">
                     <p class="grad-year">2018-2021</p>
@@ -73,74 +57,124 @@
             </div>
             <div class="edu">
                 <div class="logodiv">
-                    <img class="logo" src="pics/schlogo.jpg">
+                    <img class="logo" src="pics/education-logo/schlogo.jpg">
                 </div>
                 <div class="edu-details">
-                    <p class="sch-name">Sri Sampath Vidya Nikethan</p>
+                    <p class="sch-name"><strong>Sri Sampath Vidya Nikethan (Secondary School)</strong></p>
                     <p class="course">Board of Secondary Education - AP</p>
-                    <p class="score">9.3 CGPA</p>
                 </div>
                 <div class="gradlogo">
                     <p class="grad-year">2017-2018</p>
                 </div>
             </div>
         </div>
-        <p id="projects" class="projectsheading">PROJECTS</p>
+
+        <!-- project details -->
         <div class="projects">
-            <div class="project">
-                <div class="proname">
-                    <p>Youtube clown</p>
-                    <p class="gitlink">
-                        <a href="https://github.com/RaviNani024/YouTube-Clown" target="_blank">[Github Link]</a>
-                    </p>
+            <div id="projects" class="projectsheading">PROJECTS</div>
+            <div class="project_con">
+                <div class="project">
+                    <div class="pro_pics">
+                        <img class="pics" src="pics/weather-application/weather-app1.png" alt="Weather application">
+                        <img class="pics" src="pics/weather-application/weather-app2.png" alt="Weather application">
+                        <img class="pics" src="pics/weather-application/weather-app3.png" alt="Weather application">
+                        <img class="pics" src="pics/weather-application/weather-app4.png" alt="Weather application">
+                    </div>
+                    <div class="left-pro">
+                        <div class="proname">
+                            <span class="pro-name">Weather Application</span>
+                            <span class="gitlink">
+                                <a href="https://github.com/KarriRaviKumar/weather-app" target="_blank" class="github-link">
+                                    <img src="pics/gitlogo.png" alt="git logo" class="github-logo">
+                                    <span class="source-text">source</span>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="matter-div">
+                            <p class="promatter">I created a <strong>Weather Application</strong> using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, integrated with the <strong>WeatherAPI</strong> to fetch real-time weather and air quality data. The app features a clean and responsive design with smooth transitions and dynamic video backgrounds that change based on conditions. It displays temperature, city location, local time, weather description, and AQI, while also using <strong>glassmorphism effects</strong> for a modern look.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="promatter">Created YouTube Clown using HTML and CSS, a fun and creative web project that replicates the YouTube homepage with a humorous, clown-themed twist. This project focuses on front-end design, showcasing layout structuring, responsive elements, and custom styling. It highlights my skills in HTML and CSS while adding a playful and unique spin to a familiar platform.</div>
-            </div>
-            <div class="project">
-                <div class="proname">
-                    <p>Number guessing game</p>
-                    <p class="gitlink">
-                        <a href="https://github.com/RaviNani024/Number_guessing_game" target="_blank">[Github Link]</a>
-                    </p>
+                <div class="project">
+                    <div class="pro_pics">
+                        <img class="pics" src="pics/todo-app/todo1.png" alt="ToDo application">
+                        <img class="pics" src="pics/todo-app/todo2.png" alt="ToDo application">
+                    </div>
+                    <div class="left-pro">
+                        <div class="proname">
+                            <span class="pro-name">ToDo-application</span>
+                            <span class="gitlink">
+                                <a href="https://github.com/KarriRaviKumar/django-todo-app" target="_blank" class="github-link">
+                                    <img src="pics/gitlogo.png" alt="git logo" class="github-logo">
+                                    <span class="source-text">source</span>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="matter-div">
+                            <p class="promatter">A <strong>Django To-Do Application</strong> that allows users to efficiently manage daily tasks with features like user authentication, task creation, editing, deletion, and completion tracking. Built using <strong>Django</strong> and <strong>Python</strong>, the app follows the MVT architecture and uses SQLite for data storage, providing a responsive and user-friendly interface.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="promatter">Created a Number Guessing Game in Python where the user sets a custom range (lower to upper limit), and the system randomly generates a secret number within that range. The player has 7 chances to guess the number correctly. After each guess, the game provides feedback — whether the guess is too high or too low, helping the user get closer to the correct answer. The game uses basic control structures, loops, and random number generation to offer an interactive command-line experience.</div>
-            </div>
-            <div class="project">
-                <div class="proname">
-                    <p>Deep learning based abnornmal event detection in padestrian pathways</p>
-                    <p class="gitlink">
-                        <a href="https://github.com/RaviNani024/Deep-learning-based-abnormal-event-detection-in-padestrian-pathways" target="_blank">[Github Link]</a>
-                    </p>
+                <div class="project">
+                    <div class="pro_pics">
+                        <img class="pics" src="pics/portfolio/portfolio1.png" alt="portfolio">
+                        <img class="pics" src="pics/portfolio/portfolio2.png" alt="portfolio">
+                        <img class="pics" src="pics/portfolio/portfolio3.png" alt="portfolio">
+                    </div>
+                    <div class="left-pro">
+                        <div class="proname">
+                            <span class="pro-name">Portfolio</span>
+                            <span class="gitlink">
+                                <a href="https://github.com/KarriRaviKumar/KarriRaviKumar.github.io" target="_blank" class="github-link">
+                                    <img src="pics/gitlogo.png" alt="git logo" class="github-logo">
+                                    <span class="source-text">source</span>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="matter-div">
+                            <p class="promatter">A responsive portfolio website designed to showcase my <strong>skills</strong> and <strong>projects</strong>. Built using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, it features a clean and modern design with smooth navigation. The site is fully mobile-friendly and highlights my professional experience effectively. It also includes an interactive project gallery and contact section for easy connection.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="promatter">Developed a Deep Learning-based Abnormal Event Detection System for pedestrian pathways using the UCSD anomaly detection dataset. The system processes video frames through preprocessing steps like resizing, grayscale conversion, and background subtraction. A hybrid CNN-LSTM model was implemented to extract spatial and temporal features, enabling detection of unusual activities such as running, loitering, or sudden crowd movement. The model evaluates anomalies using reconstruction error, temporal coherence, and optical flow analysis. Performance was measured with metrics like AUC-ROC, Precision, Recall, and F1-Score. The project also includes a visualization dashboard to flag events with timestamps and anomaly scores, simulating real-world deployment for surveillance in public spaces.</div>
+                <div class="project">
+                    <div class="pro_pics">
+                        <img class="pics" src="pics/number-guessing-game/guessing-game1.png" alt="Number guessing game">
+                        <img class="pics" src="pics/number-guessing-game/guessing-game2.png" alt="Number guessing game">
+                        <img class="pics" src="pics/number-guessing-game/guessing-game3.png" alt="Number guessing game">
+                    </div>
+                    <div class="left-pro">
+                        <div class="proname">
+                            <span class="pro-name">Number guessing game</span>
+                            <span class="gitlink">
+                                <a href="https://github.com/KarriRaviKumar/Number-guessing-game" target="_blank" class="github-link">
+                                    <img src="pics/gitlogo.png" alt="git logo" class="github-logo">
+                                    <span class="source-text">source</span>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="matter-div">
+                            <p class="promatter">I built a <strong>Number Guessing Game</strong> using <strong>HTML, CSS, and JavaScript</strong>, where the player tries to guess a randomly generated number within a specified range. The app provides real-time feedback and keeps track of attempts, making it interactive and engaging.</p>
+                        </div>
+                    </div> 
+                </div>
             </div>
         </div>
-        <p id="contact" class="contactheading">CONTACT ME</p>
-        <div class="contact">
-            <div class="contact-info">
-                <p><strong>Email:</strong> <a href="mailto:ravi@example.com">ravikumar226654@gmail.com</a></p>
-                <p><strong>Phone:</strong> +91 6281603005</p>
-                <p> <a href="https://www.linkedin.com/in/ravi-karri-6a18b3247/" target="_blank">Linkedin</a></p>
-                <p> <a href="https://github.com/RaviNani024" target="_blank">Github Link</a></p>
-            </div>
-            <div class="contact-form">
-                <form action="https://formspree.io/f/mkgzdeao" method="POST">
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" required><br><br>
-
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="_replyto" required><br><br>
-
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="5" required></textarea><br><br>
-                    <div class="cenbtn">
-                        <button id="subbtn" class="subbtn" type="submit">Send Message</button>
-                    </div>
-                    
-                </form>
-            </div>
+        
+        <!-- contact details -->
+        <div class="contact_section">
+            <div class="contact">Contact</div>
+            <div class="get_in_touch">Get in Touch</div>
+            <p class="msg-me"><strong>Drop a text on Email or Instagram.</strong></p>
+            <p><strong>Email:</strong> <a class="email" href="mailto:ravikumar226654@gmail.com">ravikumar226654@gmail.com</a></p>
+            <span class="instalink">
+                <a href="https://www.instagram.com/ravi.29xyz/" target="_blank" class="insta-link">
+                    <img src="pics/instalogo.png" alt="instagram" class="insta-logo">
+                    <span class="insta-text">Instagram</span>
+                </a>
+            </span>
         </div>
     </div>
+    
     <script src="index.js"></script>
 </body>
 </html>
