@@ -52,6 +52,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .about-me{
@@ -98,7 +99,7 @@ a {
 }
 
 .logo{
-    width: 100%;
+    width: 50px;
     height: 50px;
     border-radius: 50%;
 }
@@ -122,10 +123,44 @@ a {
     text-align: center;
 }
 
+.skills-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.skills-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 40%;
+    gap: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.skill{
+    background-color: black;
+    color: white;
+    padding: 6px 6px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
 .projects{
     display: grid;
     grid-template-rows: 1fr;
     place-items: center;
+    margin-bottom: 100px;
 }
 
 .projectsheading{
@@ -282,7 +317,7 @@ a {
     padding: 3px 8px 3px 0px;
 }
 
-@media (max-width:480px){
+@media (max-width:768px){
     .welcome{
         font-weight: 700;
         font-size: 2rem;
@@ -306,8 +341,12 @@ a {
         width: 90%;
         text-align: center;
     }
+    .skills{
+        width: 80%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     .edu{
-        width: 100%;
+        width: 80%;
         grid-template-columns: 1fr 4fr 1fr;
     }
     .sch-name{
