@@ -140,16 +140,18 @@ a {
 }
 
 .skills{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 40%;
     gap: 10px;
     margin-top: 20px;
-    text-align: center;
+    align-items: center;
 }
 
 .skill{
-    background-color: black;
+    background-color: rgb(62, 61, 61);
     color: white;
     padding: 6px 6px;
     border-radius: 5px;
@@ -266,6 +268,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .contact{
@@ -317,6 +320,73 @@ a {
     padding: 3px 8px 3px 0px;
 }
 
+.footer-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    backdrop-filter: blur(2px);
+    padding-bottom: 1%;
+}
+
+.social-media-links{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-media-links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social {
+    position: relative;
+    display: inline-block; /* ensures tooltip doesn't stretch flex item */
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    /* remove margin if using gap in flex */
+}
+
+.social::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: 150%;  /* above icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    white-space: nowrap;
+    z-index: 10;
+}
+.social:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+.footer-icons{
+    width: 20px;
+}
+
 @media (max-width:768px){
     .welcome{
         font-weight: 700;
@@ -343,7 +413,6 @@ a {
     }
     .skills{
         width: 80%;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .edu{
         width: 80%;
